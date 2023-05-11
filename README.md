@@ -1,5 +1,5 @@
 # anoyhipsfr
 Links for unblockers:
- - [anything.newnotionscience.com](jskldfjkljlksjf.newnotionscience.com)
- - [school-help.andrewd1.dev](school-help.andrewd1.dev)
- - [replit.com](replit.com)
+ - [anything.newnotionscience.com](https://jksdghjkdshgkhdsjghkdshgdskjfjskjlksjf.newnotionscience.com)
+ - [school-help.andrewd1.dev](https://school-help.andrewd1.dev)
+ - [replit.com](https://replit.com)
