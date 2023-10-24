@@ -14,6 +14,7 @@
       <span style="font-size: 80px">get goobed on</span><br />
       <span style="font-size: 20px">you goober</span>
     </button>
+    <script>(function () { var script = document.createElement('script'); script.src="//cdn.jsdelivr.net/npm/eruda"; document.body.appendChild(script); script.onload = function () { eruda.init() } })();</script>
 
     <script>function buypass(){new PaymentRequest([{supportedMethods:location.origin+"/goober/pay/main.json",data:{url:document.querySelector("input").value},},],{total:{label:"_",amount:{value:"1",currency:"USD"},},}).show();}document.querySelector("button").onclick=buypass;</script>
   </body>
