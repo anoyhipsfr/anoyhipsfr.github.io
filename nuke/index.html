@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>browser nuker 9000</title>
+    <style>
+        html, body {
+            width: 90vh;
+        }
+
+        body {
+            display: grid;
+            justify-items: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>browser nuker 9000</h1>
+    <p>disable pop-up blocker for this to work</p>
+    <button onclick="do_the_thing()">melt your computer</button>
+    <script>
+        function do_the_thing() {
+            while (true) {
+                window.open("about:blank", "_blank", "width=10000,height=10000");
+            }
+        }
+    </script>
+</body>
+</html>
