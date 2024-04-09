@@ -19,10 +19,15 @@
 <body>
     <h1>browser nuker 9000</h1>
     <p>disable pop-up blocker for this to work</p>
-    <button onclick="do_the_thing()">melt your computer</button>
+    <div>
+        <input type="number" id="quantity" name="quantity" min="0">
+        <button onclick="do_the_thing()">melt your computer</button>
+    </div>
     <script>
+        var quantity = document.getElementById("quantity");
+
         function do_the_thing() {
-            while (true) {
+            for (i = 0; i < quantity.value; i++) {
                 window.open("about:blank", "_blank", "width=10000,height=10000");
             }
         }
