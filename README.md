@@ -2,4 +2,4 @@
 my english teacher was fired
 
 ## the funny
- - [goober](https://anoyhipsfr.github.io/goober)
+ - [nuke](https://anoyhipsfr.github.io/nuke)
