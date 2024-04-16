@@ -16,7 +16,7 @@
         }
     </style>
 </head>
-<body>
+<body onload="test_popup()">
     <h1>browser nuker 9000</h1>
     <p>disable pop-up blocker for this to work</p>
     <div>
@@ -29,6 +29,15 @@
         function do_the_thing() {
             for (i = 0; i < quantity.value; i++) {
                 window.open("about:blank", "_blank", "width=10000,height=10000");
+            }
+        }
+
+        function test_popup() {
+            var popup = window.open("about:blank");
+            if (popup == null || typeof popup == 'undefined') {
+
+            } else {
+                popup.close();
             }
         }
     </script>
