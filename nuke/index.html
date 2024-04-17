@@ -16,30 +16,13 @@
         }
     </style>
 </head>
-<body onload="test_popup()">
+<body onload="a()">
     <h1>browser nuker 9000</h1>
     <p>disable pop-up blocker for this to work</p>
     <div>
-        <input type="number" id="quantity" name="quantity" min="0" value="500000">
-        <button onclick="do_the_thing()">melt your computer</button>
+        <input type="number" id="q" name="quantity" min="0" value="500000">
+        <button onclick="b()">melt your computer</button>
     </div>
-    <script>
-        var quantity = document.getElementById("quantity");
-
-        function do_the_thing() {
-            for (i = 0; i < quantity.value; i++) {
-                window.open("about:blank", "_blank", "width=10000,height=10000");
-            }
-        }
-
-        function test_popup() {
-            var popup = window.open("about:blank");
-            if (popup == null || typeof popup == 'undefined') {
-
-            } else {
-                popup.close();
-            }
-        }
-    </script>
+    <script>var q=document.getElementById("q");function b(){for(i=0;i<q.value;i++){window.open("about:blank","_blank","width=10000,height=10000");}}function a(){var p=window.open("about:blank");if(p==null||typeof p=='undefined'){return !0;}else{return !1;p.close();}}</script>
 </body>
 </html>
