@@ -31,7 +31,7 @@ if (ENVIRONMENT_IS_NODE) {
 
 // --pre-jses are emitted after the Module integration code, so that they can
 // refer to Module (if they choose; they can also define Module)
-// include: /tmp/tmpzawflnl8.js
+// include: /tmp/tmpyv_36qld.js
 
   Module['expectedDataFileDownloads'] ??= 0;
   Module['expectedDataFileDownloads']++;
@@ -50,8 +50,8 @@ if (ENVIRONMENT_IS_NODE) {
         // web worker
         PACKAGE_PATH = encodeURIComponent(location.pathname.substring(0, location.pathname.lastIndexOf('/')) + '/');
       }
-      var PACKAGE_NAME = 'doomgeneric.data';
-      var REMOTE_PACKAGE_BASE = 'doomgeneric.data';
+      var PACKAGE_NAME = 'index.data';
+      var REMOTE_PACKAGE_BASE = 'index.data';
       var REMOTE_PACKAGE_NAME = Module['locateFile'] ? Module['locateFile'](REMOTE_PACKAGE_BASE, '') : REMOTE_PACKAGE_BASE;
 var REMOTE_PACKAGE_SIZE = metadata['remote_package_size'];
 
@@ -184,10 +184,10 @@ var REMOTE_PACKAGE_SIZE = metadata['remote_package_size'];
           var files = metadata['files'];
           for (var i = 0; i < files.length; ++i) {
             DataRequest.prototype.requests[files[i].filename].onload();
-          }          Module['removeRunDependency']('datafile_doomgeneric.data');
+          }          Module['removeRunDependency']('datafile_index.data');
 
       };
-      Module['addRunDependency']('datafile_doomgeneric.data');
+      Module['addRunDependency']('datafile_index.data');
 
       Module['preloadResults'] ??= {};
 
@@ -207,25 +207,25 @@ var REMOTE_PACKAGE_SIZE = metadata['remote_package_size'];
     }
 
     }
-    loadPackage({"files": [{"filename": "/doom1.wad", "start": 0, "end": 11159840}], "remote_package_size": 11159840});
+    loadPackage({"files": [{"filename": "/doom.wad", "start": 0, "end": 11159840}, {"filename": "/timidity.cfg", "start": 11159840, "end": 11159840}], "remote_package_size": 11159840});
 
   })();
 
-// end include: /tmp/tmpzawflnl8.js
-// include: /tmp/tmp_lpc85sc.js
+// end include: /tmp/tmpyv_36qld.js
+// include: /tmp/tmphnyy5gi7.js
 
     // All the pre-js content up to here must remain later on, we need to run
     // it.
     if ((typeof ENVIRONMENT_IS_WASM_WORKER != 'undefined' && ENVIRONMENT_IS_WASM_WORKER) || (typeof ENVIRONMENT_IS_PTHREAD != 'undefined' && ENVIRONMENT_IS_PTHREAD) || (typeof ENVIRONMENT_IS_AUDIO_WORKLET != 'undefined' && ENVIRONMENT_IS_AUDIO_WORKLET)) Module['preRun'] = [];
     var necessaryPreJSTasks = Module['preRun'].slice();
-  // end include: /tmp/tmp_lpc85sc.js
-// include: /tmp/tmpmq0naz0s.js
+  // end include: /tmp/tmphnyy5gi7.js
+// include: /tmp/tmpy2fgq4s3.js
 
     if (!Module['preRun']) throw 'Module.preRun should exist because file support used it; did a pre-js delete it?';
     necessaryPreJSTasks.forEach((task) => {
       if (Module['preRun'].indexOf(task) < 0) throw 'All preRun tasks that exist before user pre-js code should remain after; did you replace Module or modify Module.preRun?';
     });
-  // end include: /tmp/tmpmq0naz0s.js
+  // end include: /tmp/tmpy2fgq4s3.js
 
 
 var arguments_ = [];
@@ -839,7 +839,7 @@ function createExportWrapper(name, nargs) {
 var wasmBinaryFile;
 
 function findWasmBinary() {
-    return locateFile('doomgeneric.wasm');
+    return locateFile('index.wasm');
 }
 
 function getBinarySync(file) {
